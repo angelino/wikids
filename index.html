@@ -9,11 +9,21 @@
     <div ng-app="wikidsApp" class="container">
       <div id="header">
         <img src="images/logo_wikids1.png" id="logo" />
-        <input type="text" ng-model="query" class="search">
       </div>
 
-      <div ng-controller="BooksCtrl">
+      <nav>
+        <ul>
+          <li><a href="#">Meus Livros</a></li>
+          <li><a href="#">Minhas Cole&ccedil;&otilde;es</a></li>
+          <li><a href="#">Login</a></li>
+        </ul>
+      </nav>
 
+      <div class="group">
+        <input type="text" ng-model="query" class="search" placeholder="Buscar por...">
+      </div>
+
+      <div class="group" ng-controller="BooksCtrl">
         <ul class="images">
           <li ng-repeat="book in books | filter:query | orderBy:orderProp">
             <div class="info">
