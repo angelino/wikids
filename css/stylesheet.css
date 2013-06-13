@@ -2,17 +2,22 @@ body {
   background-color: #e9e9e9;
 }
 
+
 .logo {
   width: 500px;
   height: 200px;
 }
 
-
 .container {
   margin: 0 auto;
-  width: 1024px;
+  width: 100%;
   border-radius: 5px;
-  background-color: #ffffff;
+  background-color: #EAADEA;
+  font-family: "Segoe Print", tahoma, Verdana;
+  text-align:justify;
+
+/* cor menino F0F8FF*/
+/* cor menina EAADEA */
 }
 
 .images {
@@ -38,10 +43,10 @@ nav {
   height: 28px;
   margin-top: 10px;
   margin-bottom: 20px;
-  font-family: tahoma, Verdana;
+  font-family: "Segoe Print", tahoma, Verdana;
   font-weight: bold;
   letter-spacing: 1px;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   font-size: 1.2em;
 }
 
@@ -77,6 +82,10 @@ nav li a:hover {
 
 #footer {
   height: 100px;
+  margin-left: 10px;
+  font-size:small;
+  color: #FFFFFF;
+  font-family:"Segoe Print";
 }
 
 /* Clearfix */
